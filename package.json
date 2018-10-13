@@ -1,0 +1,61 @@
+{
+  "name": "appointments",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "0.0.18",
+    "@types/graceful-fs": "^4.1.2",
+    "ajv": "^6.5.1",
+    "axios": "^0.18.0",
+    "express": "^4.12.4",
+    "fullcalendar-reactwrapper": "^1.0.7",
+    "jwt-decode": "^2.2.0",
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.1.6",
+    "rc-progress": "^2.2.6",
+    "react": "^16.5.2",
+    "react-burger-menu": "^2.5.2",
+    "react-collapsible": "^2.3.1",
+    "react-dom": "^16.5.2",
+    "react-dropdown": "^1.5.0",
+    "react-images-upload": "^1.1.99",
+    "react-materialize": "^2.3.1",
+    "react-moment": "^0.7.9",
+    "react-redux": "^5.0.7",
+    "react-redux-form": "^1.16.9",
+    "react-redux-form-materialize": "^1.0.9",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "redux": "^3.7.2",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react-test-renderer": "^16.4.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
