@@ -1,0 +1,12 @@
+.card-container {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title {
+    color: #20a9c8;
+    font-family: comfortaa;
+    padding: 50px;
+}

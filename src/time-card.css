@@ -1,0 +1,92 @@
+.time-card {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    margin: 30px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.time-card-white {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    margin: 30px;
+    background: white;
+         border-radius: 5px;
+    text-align: center;
+}
+
+.time-card-white .card{
+    background: white;      
+}
+
+.time-card-red {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    margin: 30px;
+    background: #e06666ff;
+         border-radius: 5px;
+    text-align: center;
+}
+
+.time-card-red .card{
+    background: #e06666ff;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards_list {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.selected-label {
+    position: relative;
+    font-size: 20px;
+    font-family: comfortaa;
+    color: #20a9c8;
+    display: inline-block;
+    text-align: center;
+    font-weight: Bold;
+}
+
+.selected-time {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-family: comfortaa;
+    text-align: center;
+    font-weight: Bold;
+}
+
+.modal.modal-fixed-footer .modal-content {
+    text-align: center;
+    
+}
+
+.modal.modal-fixed-footer {
+    height: 50%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.instructions{
+    font-family: comfortaa;
+    font-size: 16px;
+    padding: 20px;
+}
