@@ -20,7 +20,16 @@ export default class TimeCard extends React.Component {
         }
     }
 
+    handleClick(time) {
+        let element = document.getElementById(time);
+        element
+            .classList
+            .toggle("time-card-red");
+
+    }
+
     render() {
+
         let modal = <Modal
             header=''
             fixedFooter
@@ -33,6 +42,8 @@ export default class TimeCard extends React.Component {
 }</div>
             <div className="selected-time">&nbsp; {this.props.selected_time}</div>
             <div className="instructions">{this.props.instructions}</div>
+            {/* <div id="time-saved">{this.props.saved}</div> */}
+
             <Row className="appointment-form">
                 <Input
                     s={12}
@@ -45,7 +56,13 @@ export default class TimeCard extends React.Component {
                     type="tel"
                     label="Phone Number"
                     className="phone"
-                    placeholder={this.props.name}/>
+                    placeholder={this.props.phone}/>
+                <Button
+                    waves='light'
+                    index={this.props.index}
+                    onClick={this
+                    .handleClick
+                    .bind(null, this.props.selected_time)}>Submit</Button>
             </Row>
         </Modal>
 

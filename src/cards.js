@@ -8,9 +8,10 @@ export default class CardsList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            available: false
+            available: true
         }
     }
+
     render() {
         const times = [
             "9:00 am",
@@ -24,14 +25,7 @@ export default class CardsList extends React.Component {
             "5:00 pm"
         ];
 
-        let handleCardColor = () => {
-
-            return this.state.available === true
-                ? "time-card-white"
-                : "time-card-red"
-        }
-
-        const cards_list = times.map((time, i, selected, instructions, name, phone) => <div className={handleCardColor()} key={i}>
+        const cards_list = times.map((time, i, selected, instructions, name, phone) => <div className="time-card" id={time} key={i}>
             <TimeCard
                 {...time}
                 card_times={time}
@@ -41,7 +35,8 @@ export default class CardsList extends React.Component {
                 name_label="Name:"
                 name={name}
                 phone_label="Phone:"
-                phone={phone}/>
+                phone={phone}
+                saved="Your appointment has been saved."/>
         </div>)
         return (
             <div className="cards-list">
