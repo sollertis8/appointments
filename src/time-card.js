@@ -21,6 +21,7 @@ export default class TimeCard extends React.Component {
         }
     }
 
+    // Change time card to red when the form is submitted
     handleClick(time) {
         let element = document.getElementById(time);
         element
@@ -31,6 +32,7 @@ export default class TimeCard extends React.Component {
 
     render() {
 
+        // appointment modal
         let modal = <Modal
             header=''
             fixedFooter

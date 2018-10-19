@@ -13,6 +13,7 @@ export default class CardsList extends React.Component {
     }
 
     render() {
+        // appointment times array
         const times = [
             "9:00 am",
             "10:00 am",
@@ -25,6 +26,7 @@ export default class CardsList extends React.Component {
             "5:00 pm"
         ];
 
+        // map time card info for each slot to the TimeCard component
         const cards_list = times.map((time, i, selected, instructions, name, phone) => <div className="time-card" id={time} key={i}>
             <TimeCard
                 {...time}
