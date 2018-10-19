@@ -4,6 +4,7 @@ import {Button, Icon} from 'react-materialize';
 import CardsList from './cards';
 import './appointments.css';
 
+// parent appointments component
 export default class Appointments extends React.Component {
     constructor(props) {
         super(props);
