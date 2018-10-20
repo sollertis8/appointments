@@ -80,7 +80,7 @@
 }
 
 .modal.modal-fixed-footer {
-    height: 50%;
+    height: 54%;
     width: 50%;
     border-radius: 15px;
 }
@@ -95,7 +95,7 @@
     position: relative;
     font-family: comfortaa;
     font-size: 16px;
-    padding: 20px;
+    /* padding: 20px; */
     display: none;
     color: #20a9c8;
     text-align: center;

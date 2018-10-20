@@ -12,6 +12,7 @@ import {
     validate
 } from 'react-materialize';
 import './time-card.css';
+import {required, nonEmpty, length, isTrimmed} from './validators';
 
 export default class TimeCard extends React.Component {
     constructor(props) {
@@ -27,6 +28,9 @@ export default class TimeCard extends React.Component {
         element
             .classList
             .toggle("time-card-red");
+
+        let saved = document.getElementById("time-saved");
+        saved.style.display = "block";
 
     }
 
@@ -44,23 +48,25 @@ export default class TimeCard extends React.Component {
             <div className="selected-label">{this.props.selected_label}</div>
             <div className="selected-time">&nbsp; {this.props.selected_time}</div>
             <div className="instructions">{this.props.instructions}</div>
-
+            <div className="time-saved" id="time-saved">Your appointment has been saved.</div>
             <Row className="appointment-form">
                 <Input
                     s={12}
                     type="text"
                     label="Name"
                     className="name"
-                    validate="true"
+                    validate
+                    Validators={[required, nonEmpty, isTrimmed]}
                     placeholder={this.props.name}>
                     <Icon>account_circle</Icon>
                 </Input>
                 <Input
                     s={12}
+                    validate
                     type="tel"
                     label="Phone Number"
                     className="phone"
-                    validate="true"
+                    Validators={[required, nonEmpty, isTrimmed]}
                     placeholder={this.props.phone}>
                     <Icon>phone</Icon>
                 </Input>
