@@ -29,7 +29,7 @@ export default class TimeCard extends React.Component {
             .classList
             .toggle("time-card-red");
 
-        let saved = document.getElementById("time-saved");
+        let saved = document.getElementById(`saved-${time}`);
         saved.style.display = "block";
 
     }
@@ -48,7 +48,7 @@ export default class TimeCard extends React.Component {
             <div className="selected-label">{this.props.selected_label}</div>
             <div className="selected-time">&nbsp; {this.props.selected_time}</div>
             <div className="instructions">{this.props.instructions}</div>
-            <div className="time-saved" id="time-saved">Your appointment has been saved.</div>
+            <div className="time-saved" id={`saved-${this.props.selected_time}`}>Your appointment has been saved.</div>
             <Row className="appointment-form">
                 <Input
                     s={12}
