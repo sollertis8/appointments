@@ -29,6 +29,7 @@ export default class TimeCard extends React.Component {
             .classList
             .toggle("time-card-red");
 
+        // display appointment saved message
         let saved = document.getElementById(`saved-${time}`);
         saved.style.display = "block";
 
